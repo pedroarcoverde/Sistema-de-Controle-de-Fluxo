@@ -1,0 +1,46 @@
+- Tabela Aluno
+id (PK)
+nome
+curso (FK para Tabela Curso)
+ano_ingresso
+semestre_atual
+fluxo_planejado
+fluxo_executado
+login
+senha
+
+- Tabela Curso
+id (PK)
+nome
+fluxo
+curriculo
+creditos
+
+- Tabela Semestre
+id (PK)
+curso (FK para Tabela Curso)
+numero
+total_creditos
+IRA
+
+- Tabela Disciplina
+id (PK)
+nome
+curso (FK para Tabela Curso)
+creditos
+ementa
+professor
+menção
+quantidade_faltas
+periodo
+local
+
+- Tabela Aluno_Semestre
+aluno_id (FK para Tabela Aluno)
+semestre_id (FK para Tabela Semestre)
+
+- Tabela Semestre_Disciplina
+semestre_id (FK para Tabela Semestre)
+disciplina_id (FK para Tabela Disciplina)
+status
+
