@@ -1,6 +1,21 @@
 - Tabela Aluno
 id (PK)
 nome
+CPF
+Identidade RG
+Filiação
+Sexo
+Estado Civil
+Naturalidade
+Endereço
+Telefone
+Cidade
+UF
+País
+E-mail
+Escolaridade
+Naturalidade
+Cargo
 curso (FK para Tabela Curso)
 ano_ingresso
 semestre_atual
@@ -43,4 +58,3 @@ semestre_id (FK para Tabela Semestre)
 semestre_id (FK para Tabela Semestre)
 disciplina_id (FK para Tabela Disciplina)
 status
-
